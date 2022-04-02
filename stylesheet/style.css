@@ -6,6 +6,13 @@ html {
 
 body {
     margin: 0; /* This ensures our site displays all the way to the edge of the browser screen */
+    opacity: 1;
+    transition: opacity 2s;
+}
+
+body.fade-out {
+    opacity: 0;
+    transition: none;
 }
 
 a {
@@ -13,6 +20,13 @@ a {
 }
 
 /* NAVIGATION */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #222;
+}
+
 nav ul {
     width: fit-content; /* keep the ul from spanning the whole page */
     padding: 0; /* remove extra space */
@@ -45,6 +59,7 @@ nav a:hover {
     position: relative;
     height: 50vh;
     overflow: hidden;
+    z-index: -1;
 }
 
 .row div {

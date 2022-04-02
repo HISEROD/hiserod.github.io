@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./stylesheet/style.css">
+    <script src="js/main.js"></script>
     <title>Immanuel Hise - Portfolio</title>
 </head>
 <body>
+    <script>
+        document.body.classList.add('fade-out');
+    </script>
 
     <!-- NAVIGATION -->
     <header>
@@ -65,9 +69,10 @@
             </div>
             <div>
                 <h1>Contact</h1>
-                <form action="https://formspree.io/f/mbjwkyjd" method="POST">
-                        <input type="text" placeholder="Name">
+                <form name="contact" action="https://formspree.io/f/mbjwkyjd" onsubmit="return validateForm()" method="POST">
+                        <input type="text" name="name" placeholder="Name">
                         <input type="text" id="Email" name="Email" placeholder="Email">
+                        <input type="text" id="Phone" name="Phone" placeholder="Phone Number (optional)">
                         <input type="text" id="Message" name="Message" placeholder="Message">
                         <input type="submit" value="SUBMIT">
                 </form>
