@@ -135,6 +135,9 @@ img:hover {
         float: none;
         width: auto;
     }
+    #vid {
+        display: none;
+    }
 }
 
 /* Styling for footer element */
