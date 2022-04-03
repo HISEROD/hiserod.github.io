@@ -1,4 +1,5 @@
 html {
+    scroll-behavior: smooth;
     background: #222;
     color: #ddd;
     font-family: sans-serif; /* Sets the font family of all h1 headings */
@@ -38,10 +39,12 @@ nav ul {
 nav li {
     list-style-type: none;
     display: inline;
+    word-wrap: none;
 }
 
 nav a {
     display: inline-block;
+    word-wrap: none;
     padding: 14px 18px;
     text-decoration: none;
     font-weight: bold;
@@ -160,16 +163,10 @@ nav {
 
 /* Screens 576px and smaller will display navbar links equally distributed */
 @media screen and (max-width: 576px) {
-    .Navbar a{
+    nav a{
         width: 25%; /* This makes each link take up 1/4 of the navbar */
-        font-size: 12px;
-    }
-}
-
-/* Screens that are 576px and smaller will not display the background video */
-@media screen and (max-width: 576px) {
-    #Typing_Video {
-        display: none;
+        font-size: 11px;
+        padding: 8px 18px;
     }
 }
 
