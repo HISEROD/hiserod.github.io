@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <script src="js/main.js"></script>
     <title>Immanuel Hise - Portfolio</title>
 </head>
+
 <body>
     <script>
         document.body.classList.add('fade-out');
@@ -16,68 +18,93 @@
     <!-- NAVIGATION -->
     <header>
         <nav>
-            <ul> <!-- all li elements are on one line so that spaces aren't added inbetween them. -->
+            <ul>
+                <!-- all li elements are on one line so that spaces aren't added inbetween them. -->
                 <li><a href="">Home</a></li><li><a href="#about">About</a></li><li><a href="#github">GitHub</a></li><li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
 
-        <!-- VIDEO BACKGROUND -->
-        <section id="vid" class="row">
-            <video autoplay muted loop>
-                <source src="./images/video/Typing.mp4" type="video/mp4">
-            </video>
-        </section>
+    <!-- VIDEO BACKGROUND -->
+    <section id="vid" class="row">
+        <video autoplay muted loop>
+            <source src="./images/video/Typing.mp4" type="video/mp4">
+        </video>
+    </section>
 
-        <!-- ABOUT SECTION -->
-        <section id="about" class="row">
-            <div class="image">
-                <img src="./images/code.jpg" alt="code">
-            </div>
-            <div>
-                <h1>About</h1>
-                <p>
-                    I am a software developer who loves to code! I enjoy doing computer graphics and piano.
-                    <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages and frameworks: HTML, CSS, JavaScript, SQL, C#, and .NET. 
-                    <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#contact">Contact</a> me below!
-                </p>
-            </div>
-        </section>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="row">
+        <div class="image">
+            <img src="./images/code.jpg" alt="code">
+        </div>
+        <div>
+            <h1>About</h1>
+            <p>
+                Hi! I am Immanuel Hise, a software developer who loves to code! I enjoy doing computer graphics and piano.
+                <br>
+                <br>
+                I am trained and experienced in the following web and programming languages and frameworks:
+                HTML, CSS, JavaScript, SQL, C#, and .NET.
+                Recently, I have graduated from <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s
+                C# and .NET Framework Boot Camp.
+                <br>
+                <br>I am a full-stack software developer and would love to work with you on your project. <a
+                    href="#contact">Contact</a> me below or reach out through <a href="" target="_blank">LinkedIn</a>!
+            </p>
+        </div>
+    </section>
 
-        <!-- GITHUB SECTION -->
-        <section id="github" class="row">
-            <div>
-                <h1>GitHub</h1>
-                <p>
-                    You can view my coding projects on my GitHub profile here:
-                    <br>
-                    <p class="center"><a href="https://github.com/hiserod" target="_blank">My GitHub</a></p>
-                </p>
-            </div>
-            <div class="image">
-                <a href="https://github.com/hiserod" target="_blank"><img src="images/GitHub.png" alt="GitHub Logo"></a>
-            </div>
-        </section>
+    <!-- GITHUB SECTION -->
+    <section id="github" class="row">
+        <div>
+            <h1>GitHub</h1>
+            <p class="center">
+                You can view my coding projects on my GitHub profile here:
+                <br><br>
+            <a href="https://github.com/hiserod" target="_blank">My GitHub</a>
+            </p>
+        </div>
+        <div class="image github-image-div">
+            <a href="https://github.com/hiserod" target="_blank"><img src="images/GitHub.png"></a>
+        </div>
+    </section>
 
-        <!-- CONTACT FORM -->
-        <section id="contact" class="row">
-            <div class="image">
-                <img src="images/contact.jpg" alt="Contact_Image">
-            </div>
-            <div>
-                <h1>Contact</h1>
-                <form name="contact" action="https://formspree.io/f/mbjwkyjd" onsubmit="return validateForm()" method="POST">
-                        <input type="text" name="name" placeholder="Name">
-                        <input type="text" id="Email" name="Email" placeholder="Email">
-                        <input type="text" id="Phone" name="Phone" placeholder="Phone Number (optional)">
-                        <input type="text" id="Message" name="Message" placeholder="Message">
-                        <input type="submit" value="SUBMIT">
-                </form>
-        </section>
+    <!-- RESUME SECTION -->
+    <section id="github" class="row">
+        <div class="image">
+            <a href="https://docs.google.com/document/d/1aTXVjqYUTeJQFqUcwCpLSs2AZ9l_VkG4hBSjLQDOh9U/edit?usp=sharing" target="_blank"><img src="images/resume.jpg"></a>
+        </div>
+        <div>
+            <h1>Resume</h1>
+            <p class="center">
+                Check out my resume here:
+                <br><br>
+            <a href="https://docs.google.com/document/d/1aTXVjqYUTeJQFqUcwCpLSs2AZ9l_VkG4hBSjLQDOh9U/edit?usp=sharing"
+                target="_blank">My Resume</a></p>
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT FORM -->
+    <section id="contact" class="row">
+        <div>
+            <h1>Contact</h1>
+            <form name="contact" action="https://formspree.io/f/mbjwkyjd" onsubmit="return validateForm()"
+                method="POST">
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" id="Email" name="Email" placeholder="Email">
+                <input type="text" id="Phone" name="Phone" placeholder="Phone Number (optional)">
+                <input type="text" id="Message" name="Message" placeholder="Message">
+                <input type="submit" value="SUBMIT">
+            </form>
+        </div>
+        <div class="image">
+            <img src="images/contact.jpg" alt="Contact_Image">
+        </div>
+    </section>
     </main>
     <footer>&copy; Immanuel Hise 2022</footer>
 </body>
+
 </html>

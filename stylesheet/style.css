@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    background: #222;
+    background: #181818;
     color: #ddd;
     font-family: sans-serif; /* Sets the font family of all h1 headings */
 }
@@ -17,7 +17,7 @@ body.fade-out {
 }
 
 a {
-    color: #a11; /* My accent color is red */
+    color: #d22; /* My accent color is red */
 }
 
 /* NAVIGATION */
@@ -114,6 +114,20 @@ q {
     overflow: hidden;
 }
 
+.github-image-div {
+    height: 25vmax;
+}
+
+.github-image-div img {
+    position: relative;
+    top: calc(12.5vmax);
+    transform: translate(0, -50%);
+}
+
+.github-image-div img:hover {
+    transform: translate(0, -50%) scale(1.05);
+}
+
 /* Image elements */
 img {
     width: 100%;
@@ -125,7 +139,7 @@ img {
 
 /* Image element hover effects */
 img:hover {
-	transform: scale(1.05); /* Image is increased slightly when hovered over */
+    transform: scale(1.05); /* Image is enlarged slightly when hovered over */
 }
 
 /* The @media rule is used in media queries to apply different styles for different media/types of devices */
