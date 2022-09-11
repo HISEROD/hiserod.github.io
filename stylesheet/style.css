@@ -1,12 +1,12 @@
 html {
     scroll-behavior: smooth;
-    background: #181818;
+    background: #222;
     color: #ddd;
     font-family: sans-serif; /* Sets the font family of all h1 headings */
 }
 
 body {
-    margin: 0; /* This ensures our site displays all the way to the edge of the browser screen */
+    margin: 0; /* This ensures the site displays all the way to the edge of the browser screen */
     opacity: 1;
     transition: opacity 2s;
 }
@@ -25,7 +25,9 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: #222;
+    background-color: #8882;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
 }
 
 nav ul {
@@ -48,7 +50,7 @@ nav a {
     padding: 14px 18px;
     text-decoration: none;
     font-weight: bold;
-    background-color: #111;
+    background-color: #222;
     color: #ddd;
     transition: color .2s, background-color .2s;
 }
@@ -185,6 +187,13 @@ nav {
         font-size: 11px;
         padding: 8px 18px;
     }
+}
+
+/* iframe styling for resume */
+iframe {
+    border: solid 4px #333;
+    border-radius: 8px;
+    box-shadow: 0 10px 48px 14px #111;
 }
 
 /* Texts over the video */
